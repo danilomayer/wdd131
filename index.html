@@ -4,11 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Danilo Mayer</title>
+    <meta name="description"
+        content="Home page for BYU Idaho - WDD 131 - Dynamic Web Fundamentals. Developed by Danilo Mayer. This page contains a brief description of author and links to all activities done during the class period.">
+    <meta name="author" content="Danilo Mayer">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js"></script>
 </head>
 
 <body>
-    HOME PAGE
+    <header class="header-box">
+        <h1>WDD 131 - Dynamic Web Fundamentals - Danilo Mayer</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://www.linkedin.com/in/danilomayer/?locale=en_US" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/" title="I-Learn">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/122?lang=eng&id=p1-p9#p1"
+                        title="Favorite Scripture">Scripture</a></li>
+                <li><a href="#" title="Final Project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-box">
+        <section class="card">
+            <div class="title">
+                <h1>About Me</h1>
+            </div>
+            <div class="content">
+                <p>This is the page I created to show that I am capable of making a basic layout page using HTML and
+                    CSS.
+                </p>
+                <img src="images/saopaulo-small.webp" alt="Sao Paulo Temple">
+                <h2>Parana - Brazil</h2>
+                <p>Now take some bacon ipsum.<br>Bacon ipsum dolor amet ball tip biltong shank jerky pork belly turkey
+                    tail pastrami fatback pancetta rump. Salami bacon corned beef, turducken shoulder kevin chicken.
+                    Landjaeger tongue capicola sirloin pork loin. Flank tri-tip cow cupim, chuck pig short loin
+                    andouille
+                    beef. Brisket frankfurter meatloaf biltong drumstick chicken turducken corned beef. Turducken shank
+                    jowl
+                    short ribs t-bone hamburger.</p>
+            </div>
+        </section>
+        <section class="card">
+            <div class="title">
+                <h1>Web Dev Resources</h1>
+            </div>
+            <div class="content">
+                <ul>
+                    <li><a href="week01/basic-layout.html">Week 01</a></li>
+                    <li><a href="#">Week 02</a></li>
+                    <li><a href="#">Week 03</a></li>
+                    <li><a href="#">Week 04</a></li>
+                    <li><a href="#">Week 05</a></li>
+                    <li><a href="#">Week 06</a></li>
+                    <li><a href="#">Week 07</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-box">
+        <p>&copy; <span id="currentyear"></span> Danilo Mayer - Parana, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
