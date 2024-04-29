@@ -1,7 +1,25 @@
-const year = document.querySelector("#currentyear");
+//Current Year
+document.addEventListener("DOMContentLoaded", function () {
+    var currentYear = new Date().getFullYear();
+    var year = document.getElementById("currentYear");
+    if (year) {
+        year.textContent = currentYear;
+    }
 
-const today = new Date();
+    var lastModified = new Date(document.lastModified);
 
-year.innerHTML = `getFullYear(): <span class="highlight">${today.getFullYear()}</span>`;
+    var formattedLastModified = lastModified.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false,
+        timeZoneName: "short"
+    });
 
-let nLastModif = Date.parse(document.lastModified);
+    var lastModifiedElement = document.getElementById("lastModified");
+    if (lastModifiedElement) {
+        lastModifiedElement.textContent = "Last modified: " + formattedLastModified;
+    }
+});
