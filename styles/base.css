@@ -96,6 +96,12 @@ header h1 {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.content a {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
 div p:nth-of-type(1) {
     grid-column: 1/2;
 }
