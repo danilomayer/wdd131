@@ -1,0 +1,44 @@
+@media screen and (min-width: 500px) {
+    #button {
+        display: none;
+    }
+
+    .menu {
+        font-family: 'Times New Roman', Times, serif;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #333333;
+        align-self: center;
+        margin: 0;
+        padding-right: 3rem;
+    }
+
+    .menu li {
+        flex: 1 1 auto;
+    }
+
+    .menu a {
+        display: block;
+        padding: 0.85rem 4rem;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 900;
+        font-size: larger;
+        color: #f1ebff;
+    }
+
+
+    main {
+        display: grid;
+        max-width: 1500px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main h2 {
+        grid-column: 1/4;
+        align-items: center;
+        justify-self: center;
+    }
+
+}
