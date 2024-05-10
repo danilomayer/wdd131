@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    margin-top: -1.5rem;
+    background-color: #009739;
+}
+
+/* Header Section */
+header {
+    background-color: #009739;
+    color: #FFFFFF;
+    padding: 2rem;
+}
+
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+/*Hero*/
+#hero {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+#hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Information*/
+#data,
+#weather {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: radial-gradient(#012169, #FEDD00);
+    border: 1px solid #FEDD00;
+    padding: 1rem;
+    box-shadow: 0 0 3rem #FFFFFF;
+    opacity: 0.85;
+    font-weight: bolder;
+}
+
+#hero h2 {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    color: #FEDD00;
+}
+
+#data {
+    grid-column: auto;
+    grid-row: 1/2;
+}
+
+#weather {
+    grid-column: auto;
+    grid-row: 2/3;
+}
+
+
+
+
+@media screen and (min-width:500px) {
+
+    /*Information*/
+    #data,
+    #weather {
+        display: block;
+        position: absolute;
+        background: radial-gradient(#FFFFFF, #012169);
+        border: 1px solid #FEDD00;
+        padding: 1rem;
+        box-shadow: 0 0 3rem #FFFFFF;
+        opacity: 0.85;
+        font-weight: bolder;
+    }
+
+    #hero h2 {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        color: #FEDD00;
+    }
+
+    #data {
+        top: 30px;
+        left: 30px;
+        right: auto;
+    }
+
+    #weather {
+        bottom: 30px;
+        right: 30px;
+        left: auto;
+    }
+
+    /* Footer Section */
+    footer {
+        font-family: 'Times New Roman', Times, serif;
+        padding: 1rem;
+        text-align: center;
+        background-color: #FEDD00;
+    }
+}
