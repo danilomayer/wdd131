@@ -37,7 +37,7 @@ header h1 {
     display: grid;
     grid-template-columns: 1fr;
     background-color: #FFFFFF;
-    border: 1px solid #FEDD00;
+    border: 1px solid #009739;
     padding: 1rem;
     font-weight: bolder;
 }
