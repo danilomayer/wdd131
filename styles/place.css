@@ -2,12 +2,14 @@
 
 
 :root {
-    font-family: 'Poppins', sans-serif;
-    margin-top: -1.5rem;
-    background-color: #012169;
+    --text-font: 'Poppins', sans-serif;
+    --header-font: 'Times New Roman', Times, serif;
 }
 
 body {
+    font-family: var(--text-font);
+    margin-top: -1.5rem;
+    background-color: #012169;
     margin: 0;
 }
 
@@ -19,7 +21,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--header-font);
     text-align: center;
 }
 
@@ -76,7 +78,7 @@ h2 #sun {
 
 /* Footer Section */
 footer {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--header-font);
     padding: 1rem;
     text-align: center;
     background-color: #FEDD00;
