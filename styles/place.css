@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-body {
+
+:root {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
     margin-top: -1.5rem;
     background-color: #012169;
+}
+
+body {
+    margin: 0;
 }
 
 /* Header Section */
@@ -17,6 +21,10 @@ header {
 header h1 {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+}
+
+header::after {
+    border: #009739;
 }
 
 /*Hero*/
@@ -59,6 +67,11 @@ header h1 {
 #weather {
     grid-column: auto;
     grid-row: 2/3;
+}
+
+h2 #sun {
+    width: 12%;
+    padding: 0.5rem;
 }
 
 /* Footer Section */
