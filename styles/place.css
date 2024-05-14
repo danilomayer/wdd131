@@ -4,12 +4,12 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     margin-top: -1.5rem;
-    background-color: #009739;
+    background-color: #012169;
 }
 
 /* Header Section */
 header {
-    background-color: #009739;
+    background-color: #012169;
     color: #FFFFFF;
     padding: 2rem;
 }
@@ -36,11 +36,9 @@ header h1 {
 #weather {
     display: grid;
     grid-template-columns: 1fr;
-    background: radial-gradient(#012169, #FEDD00);
+    background-color: #FFFFFF;
     border: 1px solid #FEDD00;
     padding: 1rem;
-    box-shadow: 0 0 3rem #FFFFFF;
-    opacity: 0.85;
     font-weight: bolder;
 }
 
@@ -50,7 +48,7 @@ header h1 {
     margin: 0;
     align-items: center;
     justify-content: center;
-    color: #FEDD00;
+    color: #012169;
 }
 
 #data {
@@ -63,21 +61,25 @@ header h1 {
     grid-row: 2/3;
 }
 
+/* Footer Section */
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1rem;
+    text-align: center;
+    background-color: #FEDD00;
+}
 
 
-
-@media screen and (min-width:500px) {
+@media screen and (min-width:750px) {
 
     /*Information*/
     #data,
     #weather {
         display: block;
         position: absolute;
-        background: radial-gradient(#FFFFFF, #012169);
         border: 1px solid #FEDD00;
         padding: 1rem;
-        box-shadow: 0 0 3rem #FFFFFF;
-        opacity: 0.85;
+        opacity: 0.8;
         font-weight: bolder;
     }
 
@@ -87,7 +89,6 @@ header h1 {
         margin: 0;
         align-items: center;
         justify-content: center;
-        color: #FEDD00;
     }
 
     #data {
@@ -102,11 +103,5 @@ header h1 {
         left: auto;
     }
 
-    /* Footer Section */
-    footer {
-        font-family: 'Times New Roman', Times, serif;
-        padding: 1rem;
-        text-align: center;
-        background-color: #FEDD00;
-    }
+
 }
