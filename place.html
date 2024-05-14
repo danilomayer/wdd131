@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Country Page - Brazil</title>
     <meta name="description" content="W03 Assignment for WDD131 BYU I">
     <meta name="author" content="Danilo Mayer">
     <link rel="stylesheet" href="styles/place.css">
@@ -34,10 +34,11 @@
             </div>
             <div id="weather">
                 <h2>Weather 🌞</h2>
-                <p>Temperature: </p>
-                <p>Conditions: </p>
-                <p>Wind: </p>
-                <p>Wind Chill: </p>
+                <p>Temperature: 8° C</p>
+                <p>Conditions: Sunny</p>
+                <p>Wind Speed: 15 Km/h</p>
+                <p>Wind Chill: <span id="windchill"></span></script>
+                </p>
             </div>
         </div>
     </main>
@@ -46,7 +47,7 @@
         <p>&copy; <span id="currentYear"></span> 🤙 Danilo Mayer - Parana, Brazil 🤙</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/getdates.js"></script>
+    <script src="scripts/getdates.js" defer></script>
     <script src="scripts/place.js" defer></script>
 </body>
 
