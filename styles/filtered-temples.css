@@ -1,0 +1,26 @@
+#temple-cards-container {
+    display: grid;
+    max-width: 1500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1/5;
+}
+
+.temple-card {
+    grid-column: 1/3;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.temple-card h2 {
+    margin-top: 0;
+}
