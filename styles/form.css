@@ -28,7 +28,8 @@ fieldset {
 
 #product-name,
 #inst-date,
-#submit-button {
+#submit-button,
+#user-name {
     height: 40px;
     width: 100%;
 }
