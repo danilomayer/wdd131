@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review - WDD 131 - Dynamic Web Fundamentals - Danilo Mayer</title>
+    <meta name="description"
+        content="Form page for BYU Idaho - WDD 131 - Dynamic Web Fundamentals. Developed by Danilo Mayer. HTML form with confirmation page.">
+    <meta name="author" content="Danilo Mayer">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header class="header-box">
+        <h1>Product Review</h1>
+    </header>
+
+    <main class="main-box">
+        <form action="review.html" method="get" id="form">
+
+            <!--NAME-->
+            <fieldset>
+                <legend>Product Name </legend>
+                <select name="product-name" id="product-name" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </fieldset>
+
+            <!--OVR RATING-->
+            <fieldset id="overall-rating">
+                <legend>Overall Rating</legend>
+                <label>☆<input type="radio" name="overall-rating" id="one-star" required></label>
+                <label>☆☆<input type="radio" name="overall-rating" id="two-stars" required></label>
+                <label>☆☆☆<input type="radio" name="overall-rating" id="three-stars" required></label>
+                <label>☆☆☆☆<input type="radio" name="overall-rating" id="four-stars" required></label>
+                <label>☆☆☆☆☆<input type="radio" name="overall-rating" id="five-stars" required></label>
+            </fieldset>
+
+            <!--DATE-->
+            <fieldset>
+                <legend>Date of Installation</legend>
+                <label><input type="date" name="inst-date" id="inst-date" required></label>
+            </fieldset>
+
+            <!--FEATURES-->
+            <fieldset id="features">
+                <legend>What features did you find useful in the product?</legend>
+                <p>(Check all the apply)</p>
+                <label><input type="checkbox" name="durability" id="durability">Durability</label>
+                <label><input type="checkbox" name="easy-use" id="easy-use">Ease of Use</label>
+                <label><input type="checkbox" name="performance" id="performance">Performance</label>
+                <label><input type="checkbox" name="design" id="design">Design</label>
+            </fieldset>
+
+            <!-- WRITTEN REVIEW -->
+            <fieldset>
+                <legend>Written Review (optional)</legend>
+                <textarea name="review" id="review"></textarea>
+            </fieldset>
+
+            <!-- BUTTON -->
+            <fieldset><label><input type="submit" value="Post Review" id="submit-button"></label></fieldset>
+        </form>
+    </main>
+
+    <footer class="footer-box">
+        <p>🤙 &copy; <span id="currentYear"></span> Danilo Mayer - Parana, Brazil 🤙</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
