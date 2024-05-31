@@ -164,6 +164,11 @@ footer {
     color: var(--paragraph-color-on-color);
 }
 
+footer a {
+    text-decoration: underline;
+    color: var(--paragraph-color-on-color);
+    font-size: larger;
+}
 
 @media screen and (min-width:980px) {
 
