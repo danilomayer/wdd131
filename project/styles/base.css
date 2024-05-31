@@ -161,6 +161,7 @@ footer {
     padding: 1rem;
     text-align: center;
     background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
 }
 
 

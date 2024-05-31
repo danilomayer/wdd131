@@ -4,11 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Danilo Mayer</title>
+    <meta name="description"
+        content="Home page for BYU Idaho - WDD 131 - Dynamic Web Fundamentals. Developed by Danilo Mayer. This page contains a brief description of author and links to all activities done during the class period.">
+    <meta name="author" content="Danilo Mayer">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body>
+    <header class="header-box">
+        <nav class="navigation">
+            <img src="images/mayer-dev-logo.png" alt="Mayer Dev Logo" id="logo">
+            <a href="portfolio.html" title="home">Home</a>
+            <a href="projects.html" title="projects">Projects</a>
+            <a href="contact.html" title="contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="projects">
+            <h1>My Projects</h1>
+            <div class="project">
+                <h2>Web development projects</h2>
+                <img src="images/project1.jpg" alt="Project 1">
+                <p>Short description of Project 1</p>
+                <a href="https://danilomayer.github.io/wdd230/" target="_blank">Read More</a>
+            </div>
+            <div class="project">
+                <h2>Maringa Chamber of Commerce</h2>
+                <img src="images/project2.jpg" alt="Project 2">
+                <p>Short description of Project 2</p>
+                <a href="https://danilomayer.github.io/wdd230/chamber/index.html" target="_blank">Read More</a>
+            </div>
+            <!-- More projects as needed -->
+        </section>
+    </main>
 
+    <footer class="footer-box">
+        <p>🤙 &copy; <span id="currentYear"></span> Danilo Mayer - Parana, Brazil 🤙</p>
+        <p id="lastModified"></p>
+        <a href="attributions.html" title="attributions">Attributions</a>
+    </footer>
+    <script src="scripts/getdates.js"></script>
 </body>
 
 </html>
