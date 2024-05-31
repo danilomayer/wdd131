@@ -98,7 +98,7 @@ header {
 }
 
 .title {
-    background-color: #2828cc;
+    background-color: var(--nav-background-color);
     display: flex;
     width: 100%;
     margin: 0;
@@ -160,7 +160,7 @@ footer {
     font-family: 'Times New Roman', Times, serif;
     padding: 1rem;
     text-align: center;
-    background-color: #9999ea;
+    background-color: var(--paragraph-background-color);
 }
 
 
@@ -186,9 +186,6 @@ footer {
 
     .navigation a:hover {
         font-weight: 800;
-        font-size: medium;
-        background-color: #bfbfd9;
-        color: #333333;
     }
 
     #logo {
