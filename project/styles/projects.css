@@ -90,6 +90,7 @@ h1 {
     border: 1px solid rgba(0, 0, 0, 0.589);
     border-radius: 15px;
     text-decoration: underline;
+    width: 250px;
 }
 
 .card {
