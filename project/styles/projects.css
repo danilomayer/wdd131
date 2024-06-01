@@ -85,6 +85,7 @@ h1 {
     font-family: var(--heading-font);
     align-self: center;
     justify-self: center;
+    text-align: center;
     background-color: var(--accent2-color);
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.589);
