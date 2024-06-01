@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Danilo Mayer</title>
-    <meta name="description"
-        content="Home page for BYU Idaho - WDD 131 - Dynamic Web Fundamentals. Developed by Danilo Mayer. This page contains a brief description of author and links to all activities done during the class period.">
+    <title>Contact | Danilo Mayer</title>
+    <meta name="description" content="This is where people will be able to contact me.">
     <meta name="author" content="Danilo Mayer">
     <link rel="stylesheet" href="styles/contact.css">
 </head>
@@ -27,10 +26,13 @@
             <form id="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
+
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
+
                 <button>Send Message</button>
             </form>
             <div id="social"></div>
@@ -42,6 +44,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/contact.js"></script>
 </body>
 
 </html>
