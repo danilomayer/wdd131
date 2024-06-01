@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #463F3A;
+    --secondary-color: #44442e;
+    --accent1-color: #BCB8B1;
+    --accent2-color: #F4F3EE;
+    --accent3-color: #E0AFA0;
+
+    /* change the values below to your chosen font(s) */
+    --heading-font: "IM Fell French Canon SC";
+    --paragraph-font: Lato, Helvetica, sans-serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #464646;
+    /* headlines on a white background */
+    --headline-color-on-color: #F4F3EE;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: #464646;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: #F4F3EE;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #464646;
+    --nav-link-color: #F4F3EE;
+    --nav-background-color: #464646;
+    --nav-hover-link-color: #BCB8B1;
+    --nav-hover-background-color: #463F3A;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    background-color: var(--nav-hover-link-color);
+}
+
+
+/* Header Section */
+.navigation {
+    font-family: var(--heading-font);
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--nav-hover-background-color);
+    margin: 0;
+    padding: 0 2rem 0 2rem;
+    align-items: center;
+}
+
+
+.navigation a {
+    display: block;
+    padding: 0.85rem 4rem;
+    margin: 5px 0;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 900;
+    font-size: x-large;
+    color: var(--accent2-color);
+}
+
+.navigation a:hover {
+    font-weight: 800;
+    font-size: larger;
+    background-color: var(--accent1-color);
+    color: #333333;
+}
+
+#logo {
+    padding: 1rem 2rem;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+
+/* Main Section */
+.main-box {
+    display: grid;
+    max-width: 1800px;
+    grid-template-columns: 1fr;
+    margin: 2rem 0 1rem 0;
+}
+
+#contact {
+    display: grid;
+    background-color: var(--accent2-color);
+    margin-bottom: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.589);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    background-color: var(--nav-background-color);
+    color: var(--accent2-color);
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.589);
+    text-decoration: underline;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent2-color);
+    color: rgba(0, 0, 0, 0.829);
+    font-size: larger;
+    padding: 1rem;
+}
+
+#contact-form label {
+    padding-top: 1rem;
+}
+
+#contact-form input {
+    width: 300px;
+    height: 44px;
+}
+
+#contact-form textarea {
+    width: 300px;
+    height: 150px;
+}
+
+button {
+    font-size: large;
+    font-weight: 800;
+    align-self: center;
+    width: 150px;
+    margin: 1rem;
+}
+
+/* Footer Section */
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+}
+
+footer a {
+    text-decoration: underline;
+    color: var(--paragraph-color-on-color);
+    font-size: larger;
+}
+
+@media screen and (min-width:800px) {
+
+
+    /* Header Section */
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-items: center;
+        margin: 0;
+        padding: 0 2rem 0 2rem;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 auto;
+        margin-left: 1rem;
+    }
+
+    .navigation a:hover {
+        font-weight: 800;
+    }
+
+    #logo {
+        padding: 1rem 0 1rem 0;
+    }
+
+    /* Main Section */
+    .main-box {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        margin: 1rem;
+    }
+
+    #contact {
+        grid-column: 2/3;
+    }
+
+    h1 {
+        align-self: center;
+        justify-self: center;
+    }
+}
